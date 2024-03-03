@@ -18,12 +18,20 @@
               <p>Precio base: $<span class="precio-inicial"></span> </p>
         
               <p>Cantidad:
-                <span class="cantidad">0</span>
+                <span class="cantidad">0</span> 
                 <button onclick=" 
-                
+
+                precioInicialSpan.innerHTML = Number (precioInicialSpan.innerHTML)+ 1
+                cantidadSpan.innerHTML = Number (cantidadSpan.innerHTML) 
+                valorTotalSpan.innerHTML = Number (valorTotalSpan.innerHTML) + 400000
                 "
                 >+</button>
-                <button onclick=""
+                <button onclick="
+
+                precioInicialSpan.innerHTML =(precioInicialSpan.innerHTML) - 1
+                cantidadSpan.innerHTML = Number ( cantidadSpan.innerHTML)
+                valorTotalSpan.innerHTML = Number (valorTotalSpan.innerHTML) - 400000
+                "
                 >-</button>
               </p>
             </div>
